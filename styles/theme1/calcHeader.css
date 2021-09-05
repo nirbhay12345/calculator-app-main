@@ -1,0 +1,17 @@
+@import url(themeToggler.css);
+
+#calcHeader {
+    color:  var(--White);
+    width: inherit;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-family: Spartan;
+}
+
+
+
+
+

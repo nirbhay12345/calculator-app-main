@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-desaturated-blue);
+    font-size: 32px;
+    font-weight: 700;
+}
