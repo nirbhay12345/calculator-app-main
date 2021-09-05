@@ -1,7 +1,71 @@
 @import url(variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-@import url(background.css);
-@import url(mainDiv.css);
-@import url(calcHeader.css);
-@import url(calcInput.css);
-@import url(calculator.css);
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-desaturated-blue);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#calcHeader {
+    color:  var(--White);
+    width: inherit;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-family: Spartan;
+}
+#calcInput {
+    height: 26px;
+    width: 432px;
+    border-radius: 10px;
+    font-size: 32px;
+    padding: 42px 34px;
+    background-color: var(--Very-dark-desaturated-blue-screen);
+    border: none;
+    text-align: right;
+    color: var(--White);
+    font-family: Spartan;
+    /* cursor: pointer; */
+}
+
+input:focus{
+   outline: none;
+   background-color: var(--Very-dark-desaturated-blue);
+}
+#mainDiv {
+    height: 90vh;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Spartan;
+}
+
+#themeToggler {
+    font-size: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggler {
+    display: flex;
+}
+
+
+
