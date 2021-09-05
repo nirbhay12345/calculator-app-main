@@ -1,7 +1,158 @@
-@import url(variables.css);
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-@import url(background.css);
-@import url(calcHeader.css);
-@import url(calcInput.css);
-@import url(calculator.css);
-@import url(mainDiv.css);
+
+:root{
+
+    /* ### Theme 2 */
+    
+    /* #### Backgrounds */
+    
+    --Light-gray : hsl(0, 0%, 90%);
+    --Grayish-red : hsl(0, 5%, 81%);
+    --Very-light-gray : hsl(0, 0%, 93%);
+    
+    /* #### Keys */
+    
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+    --Very-dark-cyan: hsl(185, 58%, 25%);
+    
+    --Orange : hsl(25, 98%, 40%);
+    --Dark-orange: hsl(25, 99%, 27%);
+    
+    --Light-grayish-yellow : hsl(45, 7%, 89%);
+    --Dark-grayish-orange : hsl(35, 11%, 61%);
+    
+    /* #### Text */
+    
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White: white;
+    
+
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-gray);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#calcHeader {
+    color:  var(--Very-dark-grayish-yellow);
+    width: inherit;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    font-family: Spartan;
+}
+#calcInput {
+    height: 26px;
+    width: 432px;
+    border-radius: 10px;
+    font-size: 32px;
+    padding: 42px 34px;
+    background-color: var(--Very-light-gray);
+    border: none;
+    text-align: right;
+    color: var(--Very-dark-grayish-yellow);
+    font-family: Spartan;
+    /* transition: focus background-color 0.2s; */
+    /* cursor: pointer; */
+}
+#mainDiv {
+    height: 90vh;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Spartan;
+}
+
+input:focus{
+   outline: none;
+   background-color: var(--Grayish-red);
+}
+#calculator {
+    width: 446px;
+    height: 372px;
+    background-color: var(--Grayish-red);
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 27px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    width: 90px;
+    height: 53px;
+    background-color: var(--Light-grayish-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Very-dark-grayish-yellow);
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: Spartan;
+    border: none;
+    box-shadow: 0px 5px 0px var(--Dark-grayish-orange);
+    padding-top: 5px;
+}
+
+#eql {
+    width: 200px;
+    background-color: var(--Orange);
+    color: var(--White);
+    box-shadow: 0px 5px 0px var(--Dark-orange);
+}
+#reset {
+    width: 200px;
+    background-color: var(--Dark-moderate-cyan);
+    color: var(--White);
+    font-size: 20px;
+    box-shadow: 0px 5px var(--Very-dark-cyan);
+}
+
+#delete {
+    color: var(--White);
+    background-color: var(--Dark-moderate-cyan);
+    font-size: 20px;
+    box-shadow: 0px 5px 0px var(--Very-dark-cyan);
+}
+
+#themeToggler {
+    font-size: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggler {
+    display: flex;
+}
+
+input[type=radio] {
+    clip: rect(0, 0, 0, 0);
+}
+
+
