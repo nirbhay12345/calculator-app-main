@@ -1,8 +1,0 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--Light-gray);
-    font-size: 32px;
-    font-weight: 700;
-}
