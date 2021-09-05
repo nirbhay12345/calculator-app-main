@@ -56,7 +56,11 @@ del.addEventListener('click', () => {
 })
 
 dot.addEventListener('click', () => {
-    input.value += '.';
+    if(input.value.slice(-1)==='.'){
+        input.value += '';
+    } else {
+        input.value += '.';
+    }
 })
 
 equal.addEventListener('click', () => {
