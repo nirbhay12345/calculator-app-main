@@ -21,21 +21,31 @@ for (let i=0; i < buttons.length; i++){
             buttons[i].id.toString() === 'div' || 
             buttons[i].id.toString() === 'mul' 
         ) {
-            switch (buttons[i].id.toString()){
-                case 'add':
-                    input.value += (input.value === '0' || input.value === '')?'':'+';
-                    break;
-                case 'sub':
-                    input.value += (input.value === '0' || input.value === '')?'':'-';
-                    break;
-                case 'div':
-                    input.value += (input.value === '0' || input.value === '')?'':'/';
-                    break;
-                case 'mul':
-                    input.value += (input.value === '0' || input.value === '')?'':'x';
-                    break;
-                default:
-                    break;
+            if(
+                input.value.slice(-1) === '+' ||
+                input.value.slice(-1) === 'x' ||
+                input.value.slice(-1) === '-' ||
+                input.value.slice(-1) === '/' ||
+                input.value.slice(-1) === '.'
+            ){
+                console.log();
+            } else {
+                switch (buttons[i].id.toString()){
+                    case 'add':
+                        input.value += (input.value === '0' || input.value === '')?'':'+';
+                        break;
+                    case 'sub':
+                        input.value += (input.value === '0' || input.value === '')?'':'-';
+                        break;
+                    case 'div':
+                        input.value += (input.value === '0' || input.value === '')?'':'/';
+                        break;
+                    case 'mul':
+                        input.value += (input.value === '0' || input.value === '')?'':'x';
+                        break;
+                    default:
+                        break;
+                }
             }
         } else {
             if(input.value === '0'){
